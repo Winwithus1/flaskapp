@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Weekly Reminder</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(to right, #e0f7e9, #c1efd4);
+            margin: 0;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        h1 {
+            color: #2e7d32;
+            margin-bottom: 1.5rem;
+        }
+
+        .reminder-box {
+            background-color: #ffffff;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            display: inline-block;
+        }
+
+        .reminder-text {
+            font-size: 1.2rem;
+            color: #2e7d32;
+            margin-bottom: 1rem;
+        }
+
+        button {
+            background-color: #43a047;
+            color: white;
+            border: none;
+            padding: 0.75rem 1.5rem;
+            font-size: 1rem;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #388e3c;
+        }
+
+        .nav-links {
+            margin-top: 2rem;
+        }
+
+        .nav-links a {
+            color: #2e7d32;
+            text-decoration: none;
+            margin: 0 1rem;
+        }
+
+        .nav-links a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1>🍀 Lottery Reminder</h1>
+
+    <div class="reminder-box">
+        <p class="reminder-text">
+            Stay lucky! Click below to receive a reminder.
+        </p>
+        <form action="{{ url_for('reminders') }}" method="GET">
+            <button type="submit">Send Me a Reminder</button>
+        </form>
+    </div>
+
+    <div class="nav-links">
+        <a href="{{ url_for('legal_lottery') }}">← Back to Legal Info</a> |
+        <a href="{{ url_for('dashboard') }}">🏠 Go to Dashboard</a>
+    </div>
+</body>
+</html>

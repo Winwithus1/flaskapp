@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manual - WinWithUs</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Your existing styles */
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>WinWithUs Manual</h1>
+    <p>Follow these steps to get started</p>
+</header>
+
+<div class="container">
+    <!-- Your existing manual content -->
+    <div class="manual-steps">
+        <h3>Steps to Participate:</h3>
+        <ul>
+            <li><strong>Step 1:</strong> Register an account by providing your name and email.</li>
+            <li><strong>Step 2:</strong> Contribute to the lottery pool to enter the lottery. Contributions are mandatory for participation.</li>
+            <li><strong>Step 3:</strong> Once entered, you'll automatically be included in future drawings.</li>
+            <li><strong>Step 4:</strong> Check the date for the next lottery drawing and make sure you're ready!</li>
+            <li><strong>Step 5:</strong> After each drawing, winners will be notified via email.</li>
+        </ul>
+
+        <h3>Lottery Rules:</h3>
+        <ul>
+            <li>Contributions can be made at any time before the drawing.</li>
+            <li>You can only win once per drawing, even if multiple entries are made.</li>
+            <li>All contributions are non-refundable.</li>
+            <li>Winners will be selected at random during each drawing.</li>
+        </ul>
+    </div>
+
+    <!-- Add a link to the dashboard after reading the manual -->
+    <div class="manual-next">
+        <a href="{{ url_for('dashboard') }}" class="btn">Go to Dashboard</a>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2025 WinWithUs. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
